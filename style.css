@@ -1,0 +1,70 @@
+*{
+  box-sizing: border-box;
+}
+.input_required {
+  color: red;
+}
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+.customers-item-form
+{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1px;
+  width: 45%;
+  margin-left: 200px;
+}
+.customers-item-form label {
+  flex-basis: 40%; /* กำหนดขนาดของ label */
+}
+button {
+  margin-top: 25px;
+  margin-left: 200px;
+  background-color: #ffffffee; /* สีพื้นหลังของปุ่ม */
+  color: rgba(0, 0, 0, 0.979); /* สีของตัวอักษรในปุ่ม */
+  padding: 10px 20px; /* กำหนดขนาดของพื้นที่ภายในปุ่ม */
+  cursor: pointer; /* เปลี่ยนรูปร่างเมื่อนำเมาส์ไปชี้ที่ปุ่ม */
+  border-radius: 5px; /* มุมโค้งบนปุ่ม */
+}
+button:hover {
+  background-color: #45a049; /* เปลี่ยนสีพื้นหลังของปุ่มเมื่อเมาส์ชี้ */
+}
+.logo{
+  margin-left: 0px;
+font-size: 30px;
+}
+label{
+  font-size: 20px;
+}
+.checkbox{
+  margin-left: 200px;
+  display: flex;
+  align-items: center;
+  width: 19%;
+}
+.checkbox input[type="checkbox"] {
+  vertical-align: middle; /* จัดให้ checkbox และข้อความอยู่กึ่งกลางของกัน */
+  cursor: pointer;
+  margin-left: auto;
+}
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
